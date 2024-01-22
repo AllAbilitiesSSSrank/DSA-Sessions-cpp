@@ -3,15 +3,19 @@ using namespace std;
 
 int main()
 {
-    vector<vector<int>>t;
-
-    t[0].push_back(10);
-     t[0].push_back(10);
-
- t[1].push_back(10);
- t[2].push_back(10);
- t[3].push_back(10);
-cout<<t[0].size();
-cout<<t.size();
+    unordered_set<int>s;
+    for(int i = 0 ;i<5;i++)
+    {
+        int x;
+        cin>>x;
+        s.insert(x);
+    }
+    for(auto it:s)
+    {
+        if(s.find(it-1)==s.end())
+        {
+            cout<<"a";
+        }
+    }
 
 }
