@@ -29,7 +29,7 @@ int main()
     
     cout<<it - M[1].begin() <<endl;
 
-cout<<M[0].size();
+
 
 
 
